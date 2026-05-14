@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tanggap/admin/login_admin.dart';
 import 'login.dart';
 
 class LandingPage extends StatelessWidget {
@@ -139,11 +140,21 @@ class LandingPage extends StatelessWidget {
                             ),
 
                             const SizedBox(width: 15),
+                            GestureDetector(
+                            onTap: () {
 
-                            Column(
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) =>
+                                      const LoginAdminPage(),
+                                ),
+                              );
+                            },
+                            child: Column(
                               crossAxisAlignment:
                                   CrossAxisAlignment.start,
-                              children: const [
+                              children: const [                               
                                 Text(
                                   'Admin / Desa',
                                   style: TextStyle(
@@ -160,6 +171,7 @@ class LandingPage extends StatelessWidget {
                                   ),
                                 ),
                               ],
+                            ),
                             ),
                           ],
                         ),

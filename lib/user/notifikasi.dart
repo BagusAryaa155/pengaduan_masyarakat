@@ -44,44 +44,6 @@ class NotifikasiPage extends StatelessWidget {
         ],
       ),
 
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: 3,
-
-        selectedItemColor: Colors.blue,
-        unselectedItemColor: Colors.black,
-
-        items: const [
-
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: "Beranda",
-          ),
-
-          BottomNavigationBarItem(
-            icon: Icon(Icons.confirmation_num),
-            label: "Pengaduan",
-          ),
-
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.add_circle,
-              size: 40,
-            ),
-            label: "",
-          ),
-
-          BottomNavigationBarItem(
-            icon: Icon(Icons.notifications),
-            label: "Notifikasi",
-          ),
-
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: "Akun",
-          ),
-        ],
-      ),
-
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(

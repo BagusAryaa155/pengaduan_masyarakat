@@ -15,7 +15,7 @@ class DashboardPage extends StatelessWidget {
       // BOTTOM NAVIGATION
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
-        selectedItemColor: Colors.blue,
+        selectedItemColor: Colors.black,
         unselectedItemColor: Colors.black,
         currentIndex: 0,
         onTap: (index) {
@@ -33,6 +33,13 @@ class DashboardPage extends StatelessWidget {
               MaterialPageRoute(builder: (context) => const PengaduanPage()),
             );
           }
+           //menu pengaduan
+          if (index == 2) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const BuatPengaduanPage()),
+            );
+          }
           if (index == 3) {
             Navigator.push(
               context,
@@ -47,7 +54,7 @@ class DashboardPage extends StatelessWidget {
             label: "Pengaduan",
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.add_circle, size: 40),
+            icon: Icon(Icons.add_circle, size: 60, color: Colors.blue),
             label: "",
           ),
           BottomNavigationBarItem(
