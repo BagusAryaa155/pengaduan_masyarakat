@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dashboard.dart';
 
 class BuatPengaduanPage extends StatefulWidget {
   const BuatPengaduanPage({super.key});
@@ -130,7 +131,12 @@ class _BuatPengaduanPageState extends State<BuatPengaduanPage> {
             _buildDropdown(
               value: urgensi,
               hint: "Pilih Tingkat Urgensi",
-              items: ["Rendah", "Sedang", "Tinggi"],
+              items: [
+                "Sangat Tinggi",
+                "Tinggi",
+                "Sedang",
+                "Rendah",
+              ],
               onChanged: (value) {
                 setState(() {
                   urgensi = value;
@@ -150,7 +156,13 @@ class _BuatPengaduanPageState extends State<BuatPengaduanPage> {
             _buildDropdown(
               value: dampak,
               hint: "Masukan dampak keselamatan",
-              items: ["Tidak Ada", "Sedikit", "Berbahaya"],
+              items: [
+                "Aman",
+                "Gangguan Kecil",
+                "Resiko Luka",
+                "Sangat Berbahaya",
+                "Gawat Darurat",
+              ],
               onChanged: (value) {
                 setState(() {
                   dampak = value;
@@ -170,7 +182,13 @@ class _BuatPengaduanPageState extends State<BuatPengaduanPage> {
             _buildDropdown(
               value: sensitivitas,
               hint: "Masukan sensitivitas waktu",
-              items: ["Normal", "Cepat", "Sangat Mendesak"],
+              items: [
+                "Stabil",
+                "Lambat",
+                "Sedang",
+                "Cepat",
+                "Detik Ini",
+              ],
               onChanged: (value) {
                 setState(() {
                   sensitivitas = value;
@@ -190,7 +208,13 @@ class _BuatPengaduanPageState extends State<BuatPengaduanPage> {
             _buildDropdown(
               value: alternatif,
               hint: "Masukan ketersediaan alternatif",
-              items: ["Ada", "Tidak Ada"],
+              items: [
+                "Banyak Pilihan",
+                "Ada Pilihan",
+                "Sulit",
+                "Hampir Buntu",
+                "Total Terisolasi",
+              ],
               onChanged: (value) {
                 setState(() {
                   alternatif = value;
@@ -210,7 +234,13 @@ class _BuatPengaduanPageState extends State<BuatPengaduanPage> {
             _buildDropdown(
               value: cakupan,
               hint: "Masukan cakupan lokasi",
-              items: ["Sedikit", "Sedang", "Banyak"],
+              items: [
+                "Pribadi",
+                "Tetangga",
+                "Lingkungan",
+                "Wilayah Luas",
+                "Sangat Luas",
+              ],
               onChanged: (value) {
                 setState(() {
                   cakupan = value;
@@ -296,7 +326,17 @@ class _BuatPengaduanPageState extends State<BuatPengaduanPage> {
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () {
+
+                  Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const DashboardPage(),
+                  ),
+                );
+
+              },
+                
                 child: const Text(
                   "Kirim Pengaduan",
                   style: TextStyle(
@@ -374,7 +414,7 @@ class _BuatPengaduanPageState extends State<BuatPengaduanPage> {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
             image: const DecorationImage(
-              image: AssetImage('assets/images/jalanberlubang.jpg'),
+              image: AssetImage('assets/images/jalanberlubang.jpeg'),
               fit: BoxFit.cover,
             ),
           ),

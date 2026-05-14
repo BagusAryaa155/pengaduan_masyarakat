@@ -65,7 +65,7 @@ class _RegisterPageState extends State<RegisterPage> {
                             Align(
                               alignment: Alignment.centerLeft,
                               child: Text(
-                                "Register User",
+                                "",
                                 style: TextStyle(
                                   color: Colors.black,
                                   fontSize: 18,
