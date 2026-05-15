@@ -118,9 +118,8 @@ class DashboardPage extends StatelessWidget {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         image: const DecorationImage(
-                          image: NetworkImage(
-                            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSUgZnChkoRJWVhaAgq4X48HJkou3kN5i23w&s",
-                          ),
+                          image: AssetImage(
+                            "assets/images/desa_bali3.webp",),
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -265,8 +264,8 @@ class DashboardPage extends StatelessWidget {
         children: [
           ClipRRect(
             borderRadius: BorderRadius.circular(8),
-            child: Image.network(
-              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_dNOHeX67qYnC1tEIxltXB4c4Gy6QyyviCw&s",
+            child: Image.asset(
+              "assets/images/jalanberlubang.jpeg",
               width: 50,
               height: 50,
               fit: BoxFit.cover,

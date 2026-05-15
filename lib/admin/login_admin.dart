@@ -72,19 +72,6 @@ class LoginAdminPage extends StatelessWidget {
                 ),
               ),
 
-              Align(
-                alignment: Alignment.centerRight,
-                child: TextButton(
-                  onPressed: () {},
-                  child: const Text(
-                    "Lupa Password?",
-                    style: TextStyle(
-                      color: Colors.blue,
-                    ),
-                  ),
-                ),
-              ),
-
               const SizedBox(height: 20),
 
               SizedBox(

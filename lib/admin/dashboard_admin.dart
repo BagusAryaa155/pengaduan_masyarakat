@@ -408,8 +408,7 @@ class DashboardAdminPage extends StatelessWidget {
 
                     decoration:
                         BoxDecoration(
-                      color: const Color(
-                          0xff0B6E4F),
+                      color: const Color.fromARGB(255, 44, 200, 150),
 
                       borderRadius:
                           BorderRadius

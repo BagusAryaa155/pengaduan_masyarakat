@@ -33,7 +33,7 @@ class DrawerAdmin extends StatelessWidget {
                   SizedBox(height: 10),
 
                   Text(
-                    "Admin Desa",
+                    "Admin",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 18,
